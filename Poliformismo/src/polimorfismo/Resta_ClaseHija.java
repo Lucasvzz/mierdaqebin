@@ -1,10 +1,12 @@
 package polimorfismo;
 
+public class Resta_ClaseHija extends Operaciones_ClasePadre {
 
-public class Resta_ClaseHija extends Operaciones_ClasePadre{
-    
     @Override
-    public void Operaciones(){
-        resultado = valor1 - valor2;
+    public int Operaciones(int valor1, int valor2) {
+        int resta = valor1 - valor2;
+        setResultado(resultado + resta);
+        return resta;
     }
+
 }
